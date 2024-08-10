@@ -1,0 +1,28 @@
+manifestVersion: 1
+id: open-webui
+name: Open Webui
+tagline: Run Ollama AI on your Umbrel node.
+icon: https://tse2.mm.bing.net/th?id=OIP.KdC-7jyKxblHG5wbxZ_1OQAAAA&pid=Api
+category: AI
+version: "1.0.0"
+port: 11434
+description: >-
+  Add your app's description here.
+
+
+  You can also add newlines!
+
+developer: Open Webui
+website: https://openwebui.com
+submitter: Rohan
+submission: https://github.com/rjt11221/umbrel-custom-app-store
+repo: https://github.com/rjt11221/umbrel-custom-app-store
+support: https://github.com/rjt11221/umbrel-custom-app-store/issues
+gallery:
+  - https://tse2.mm.bing.net/th?id=OIP.KdC-7jyKxblHG5wbxZ_1OQAAAA&pid=Api
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: "/open-webui"
+defaultUsername: ""
+defaultPassword: ""
