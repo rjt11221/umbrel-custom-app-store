@@ -1,13 +1,28 @@
+manifestVersion: 1
 id: ollama
 name: Ollama AI
-version: 1.0.0
-description: "Run Ollama AI on your Umbrel node."
-repository: https://github.com/rjt11221/umbrel-custom-app-store
+tagline: Run Ollama AI on your Umbrel node.
+icon: https://i0.wp.com/www.stevenbaert.ai/wp-content/uploads/2023/08/ollama.png?fit=945%2C945&ssl=1
+category: AI
+version: "1.0.0"
+port: 11434
+description: >-
+  Add your app's description here.
+
+
+  You can also add newlines!
+
+developer: Ollama
 website: https://ollama.com
-license: MIT
-path: /ollama
-ports:
-  - "11434:11434"
-container:
-  image: ghcr.io/ollama/ollama:latest
-  restart: unless-stopped
+submitter: Rohan
+submission: https://github.com/rjt11221/umbrel-custom-app-store
+repo: https://github.com/rjt11221/umbrel-custom-app-store
+support: https://github.com/rjt11221/umbrel-custom-app-store/issues
+gallery:
+  - https://topai.tools/assets/img/tools/ollama-ai.webp
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: "/ollama"
+defaultUsername: ""
+defaultPassword: ""
