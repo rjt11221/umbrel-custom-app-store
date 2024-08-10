@@ -1,20 +1,17 @@
 version: '3.8'
-
 services:
+
+  app_proxy:
+    environment:
+      # The format here is: <app-id>_<docker-service-name>_1
+      APP_HOST: ollama_ollama_1
+      APP_PORT: 3000
+
   ollama:
     image: ghcr.io/ollama/ollama:latest
     container_name: ollama
+    user: "1000:1000"
     ports:
       - "11434:11434"  # Ollama AI on port 11434
     restart: unless-stopped
-
-  openwebui:
-    image: ghcr.io/someuser/openwebui:latest  # Replace with the correct image if necessary
-    container_name: openwebui
-    ports:
-      - "3000:3000"  # OpenWebUI on port 3000
-    restart: unless-stopped
-    environment:
-      - SOME_ENV_VAR=some_value  # Add any necessary environment variables for OpenWebUI
-    volumes:
-      - ./data:/data  # If OpenWebUI requires persistent storage
+    init: true
