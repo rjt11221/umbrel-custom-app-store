@@ -2,13 +2,12 @@ id: ollama
 name: Ollama AI
 version: 1.0.0
 description: "Run Ollama AI on your Umbrel node."
-repository: https://github.com/yourusername/umbrel-custom-app-store
+repository: https://github.com/rjt11221/umbrel-custom-app-store
 website: https://ollama.com
 license: MIT
 path: /ollama
 ports:
   - "11434:11434"
-  - "3000:3000"
 container:
   image: ghcr.io/ollama/ollama:latest
   restart: unless-stopped
